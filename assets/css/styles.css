@@ -1,0 +1,261 @@
+/** Por favor no evalúen el orden, este archivo esta totalmente desordenado ajaj**/
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background: #FAF8FD;
+}
+
+.navbar{
+    width:100%;
+    height: 75px;
+    background: var(--white, #FFF);
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+    border-radius: 0px 0px 32px 32px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    position: fixed;
+}
+
+.nav-list{
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.acceso-clientes{
+    display: inherit;
+    padding: 13px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    border: 1px solid var(--grey, #B8B8B8);
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.list-servicios{
+    display: inherit;
+    align-items: center;
+}
+
+.buttons{
+    display: inherit;
+    gap: 16px;
+}
+
+.contacto{
+    display: inherit;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px; 
+    background-color: var(--black, #1C1B1F);
+    color: var(--white, #FFF);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.banner{
+    width:100%;
+    height: 790px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/img_beneficios_generacion.png), linear-gradient(53deg, #1C1B1F 42.84%, #EC1D26 112.05%);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    background-clip: content-box;
+}
+
+.content{
+    width: 820px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.h1-banner{
+    color: var(--white, #FFF);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 137.5%; /* 66px */
+    letter-spacing: 1.44px;
+}
+
+.h1-bold{
+    color: var(--white, #FFF);
+    font-style: italic;
+    font-weight: 700;
+}
+
+.texts{
+    display: inherit;
+    flex-direction: inherit;
+    gap: 24px;
+}
+
+.button-primary{
+    width: fit-content;
+    border-radius: 32px;
+    background: linear-gradient(263deg, #EA1D26 18.42%, #412829 103.2%);
+    padding: 16px 24px;
+    border: none;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.texts p{
+    color: var(--white, #FFF);
+    text-align: center;
+    /* texto-M */
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.6px;
+}
+
+.servicios{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+}
+
+.h2-servicios{
+    color: var(--black, #141313);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.5%; /* 49.5px */
+    letter-spacing: 1.08px;
+}
+
+.underline{
+    border-bottom: var(--red, #CE0009);;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-radius: 2px;
+}
+
+.cards{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 24px;
+    column-gap: 24px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+
+.card-1, .card-2, .card-3, .card-4{
+    display: flex;
+    width: 668px;
+    padding: 32px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background: var(--white, #FFF);
+}
+
+.card-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+}
+
+.card-texts{
+    gap: 16px;
+    display: inherit;
+    flex-direction: column;
+}
+
+.card-button{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 4px;
+    align-self: stretch;
+    color: var(--red, #CE0009);
+    background: none;
+    border: none;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+}
+
+.card-title{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.5%; /* 27.5px */
+    letter-spacing: 0.6px;
+    color: var(--black, #141313);
+}
+
+.card-text{
+    font-family: Quicksand;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 214.286% */
+    letter-spacing: 0.42px;
+}
+
+.card-circle{
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    min-width: 75px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 28px 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1B1F;
+    color: var(--white, #FFF);
+}
